@@ -22,7 +22,7 @@ const Reservations = () => {
         }  
     }
 
-    axios.get('http://10.33.21.222:4000/api/guests')
+    axios.get('http://localhost:4000/api/guests')
         .then(response => {
             setGuests(response.data)
         })
