@@ -59,7 +59,7 @@ function Weeding() {
 
     function createScreenForm() {
         const create = () => {
-            axios.post('http://10.33.21.222:4000/api/weeding/create', {
+            axios.post('http://localhost:4000/api/weeding/create', {
                 hisName, herName, date, location, partySize
             })
             .then((res) => {
