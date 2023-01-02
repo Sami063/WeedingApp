@@ -20,35 +20,40 @@ const AuthProvider = ({children}) => {
         })
     }
 
-    // Login function: 
+    // Login function: A user can only be LogedIn when the response, status code is 200
     function login(email, password) {
+        // When it is true we set the loading true, otherwise it will not load
         if(email && password !== '') {
             setIsLoading(true)
         } else {
             setIsLoading(false)
         }
+        // The login system is developed using .net core api C#
+        // Post req to backend, it will send status code/response
         axios.post('http://localhost:5001/api/User/login', {
             email, password
         })
         .then((response) => {
             if(response.status === 200) {
-                console.log(response.status)
+                console.log(response.status) // returns 200 if its true
                 setIsLoading(false)
-                setUserToken('verified')
+                setUserToken('verified') // The user is verified, Login is Successfully
             } else {
                 setIsLoading(false)
             }
         })
+        // Catching any erorrs
         .catch(err => {
             setIsLoading(false)
             setUserToken('login')
         })
     }
 
+    // Verified will be false so the user can be logget out
     function logout() {
         setUserToken('something')
     }
-    // User will be able to return from weeding to default screen
+    // User will be able to return from weeding to default screen/first screen that shows when the guests opens the app
     function goBackToDefaultScreen() {
         setUserToken('something')
     }
@@ -56,12 +61,12 @@ const AuthProvider = ({children}) => {
     // Default stack will navigate between partcipant/admin screen
     // The user will be prompted- to login as admin, or continue as participant/guest
     function admin() {
-        // when user token is 'adminstack, 
-        // we will navigate first to login the to AdminStack if success
+        // When user token is 'adminstack, takes to admin login
+        // We will navigate first to login the to AdminStack if success
         setUserToken('login')
     }
     function participant() {
-        // it´s default screen/page that guest can access without login
+        // it´s default screen/page that guest can access without logged in
         setUserToken('guest') 
     }
     const addData = (name) => {
@@ -84,6 +89,7 @@ const AuthProvider = ({children}) => {
         }
 
     // Children will accept from parentices -? Two curl brackets
+    // We can access all those functions in any files in out app by using 
     return (
         <AuthContext.Provider value={{login, logout, addData, handleWeeding,
          userToken, isLoading, admin, participant, goBackToDefaultScreen}}> 
