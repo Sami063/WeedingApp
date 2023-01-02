@@ -11,6 +11,7 @@ function RegisterScreen() {
     const navigation = useNavigation(); 
 
     const register = () => {
+        // Post request to the server by using axios
         axios.post('http://localhost:4000/api/register', {
             firstName,
             lastName,
