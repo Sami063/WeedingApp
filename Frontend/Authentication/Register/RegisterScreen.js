@@ -11,7 +11,7 @@ function RegisterScreen() {
     const navigation = useNavigation(); 
 
     const register = () => {
-        axios.post('http://10.33.21.222:4000/api/register', {
+        axios.post('http://localhost:4000/api/register', {
             firstName,
             lastName,
             email
