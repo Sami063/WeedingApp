@@ -15,42 +15,6 @@ function Weeding() {
     const [partySize, setPartySize] = useState(0)
 
     const [screen, setScreen] = useState(null)
-    const [option, setOption] = useState([
-        {
-            name: 'Samuel & Kewanit',
-            address: 'addis Ababa', 
-            date: '15.10.2022',
-            id: 1 
-        },
-
-        {
-            name: 'Samuel & Kewanit',
-            address: 'addis Ababa', 
-            date: '15.10.2022',
-            id: 2 
-        },
-
-        {
-            name: 'Samuel & Kewanit',
-            address: 'addis', 
-            date: '15.10.2022',
-            id: 6 
-        },
-
-        {
-            name: 'Samuel & Kewanit',
-            address: 'addis', 
-            date: '15.10.2022',
-            id: 8 
-        },
-        
-        {
-            name: 'Samuel & Kewanit',
-            address: 'addis', 
-            date: '15.10.2022',
-            id: 10 
-        },
-    ])
 
     // The choiced Wedding party
     const handleWeeding = (id) => { 
