@@ -11,7 +11,7 @@ const AuthProvider = ({children}) => {
     const [partySize, setPartySize] = useState(0);
 
     function handleWeeding(id) {
-        axios.get('http://10.33.21.222:4000/api/get/weeding')
+        axios.get('http://localhost:4000/api/get/weeding')
         .then((response) => {
             // console.log(response.data._id === id);
             if(response.status === 200) {
@@ -27,7 +27,7 @@ const AuthProvider = ({children}) => {
         } else {
             setIsLoading(false)
         }
-        axios.post('http://10.33.21.222:5001/api/User/login', {
+        axios.post('http://localhost:5001/api/User/login', {
             email, password
         })
         .then((response) => {
@@ -66,7 +66,7 @@ const AuthProvider = ({children}) => {
     }
     const addData = (name) => {
         setDrinks(name)
-        axios.post('http://10.33.21.222:4000/register', {
+        axios.post('http://localhost:4000/register', {
             email: email,
             firstName: burger,
             lastName: burgerDesc,
