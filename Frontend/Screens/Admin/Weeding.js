@@ -103,7 +103,7 @@ function Weeding() {
     }
     
     const [data, setData] = useState([])
-    axios.get('http://10.33.21.222:4000/api/get/weeding')
+    axios.get('http://localhost:4000/api/get/weeding')
         .then(response => {
             // console.log(response.data)
             setData(response.data)
