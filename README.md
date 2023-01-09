@@ -9,8 +9,8 @@ opgave vil jeg brug Axios til get/post request for at passe data til database og
 node js og express.
 </p>
 App indeholder: <br>
-Deltager: 
-<p>
+<p>Deltager: </p>
+
 - Kan tilmeder
 - Mulighed for at selv vælge på hvilken bryllup de gerne vil deltage
 - Vælge af madvare og drikevare via burger menu (screen)
@@ -20,13 +20,12 @@ Screen: Deltagene:
 - Der vil være en deltager liste, og reservations list med deltagene. Jeg vil
 gerne have overblik over hvem er reservete hvad til bryllupet.
 <br>
-Screen: Burger menu
+<p>Screen: Burger menu</p>
 - Der vil være en burger menu og de forskelige slags drikevare at valge imellem.
 Bruger kan tilføj de ønsket, og godkende after færdig. Så vil det blev registrere i
 database.
 Google api/vej
 - Der vill implementere google api hvor deltager kan finde vej til.
-</p>
 
 WBS:
 1. DbContext: Jeg vil gerne starte med at laver database først
