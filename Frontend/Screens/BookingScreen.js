@@ -10,12 +10,16 @@ const BookingScreen = () => {
 
     const route = useRoute()
     const navigation = useNavigation();
+    
+    // Storing the cart item in the cart object, so we can have a list of items in our cart screen
     const [cart, setCart] = useState([])
     // Filter screen data
     const [menuScreen, setMenuScreen] = useState([
         {name: 'Burger', id: 1},
         {name: 'Drink', id: 2},
     ]) 
+    
+    // Objects for food and drink
     const food = [
         {
             name: 'Vaggie Burger', 
@@ -97,7 +101,8 @@ const BookingScreen = () => {
             id: 13
         },
     ]
-    // for burger and drink screen
+    // for burger and drink screen 
+    // We can filter or navigate between food and drink screen 
     const [filterScreen, setFilterScreen] = useState()
     function handleScreenChange(name) {
         switch (name) {
@@ -212,7 +217,7 @@ const BookingScreen = () => {
         ) 
     }
     // it will display the next screen
-    // it will change it's name, when there is no screen to complete the order
+    // it will change it's name, when there is no screen to 'complete the order'
     const [name, setName] = useState('Next')
     const [step, setStep] = useState(0)
     const showNextScreen = () => {
