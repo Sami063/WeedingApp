@@ -21,6 +21,7 @@ function Weeding() {
         setId(id)
     } 
 
+    // Post req to the server, we will use axios to post data to the database with the help of node js
     function createScreenForm() {
         const create = () => {
             axios.post('http://localhost:4000/api/weeding/create', {
@@ -36,6 +37,7 @@ function Weeding() {
             })
         }
 
+        // Form for creating list of upcomming weeding
         return (
         <View style={styles.screen}>
             <Pressable onPress={() => setScreen(null)}>
@@ -70,9 +72,10 @@ function Weeding() {
     axios.get('http://localhost:4000/api/get/weeding')
         .then(response => {
             // console.log(response.data)
-            setData(response.data)
+            setData(response.data) // Getting data from database and storing them in useState hook, we will use them inside 'weedingList()' func
         })
-    // console.log(data)
+    
+// A list of weeding
     function weedingList() {
         return (
         <SafeAreaView style={styles.screen}>
@@ -106,7 +109,7 @@ function Weeding() {
         </SafeAreaView>
     )
     }
-    // A list over upcomming wedding - Main Screen return 
+    // A list over upcomming wedding - The Main Screen return ...
     return (
         <View>
             {
