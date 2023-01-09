@@ -35,7 +35,7 @@ const AuthProvider = ({children}) => {
         })
         .then((response) => {
             if(response.status === 200) {
-                console.log(response.status) // returns 200 if its true
+                console.log(response.status) // returns 200 if it's true
                 setIsLoading(false)
                 setUserToken('verified') // The user is verified, Login is Successfully
             } else {
@@ -49,7 +49,7 @@ const AuthProvider = ({children}) => {
         })
     }
 
-    // Verified will be false so the user can be logget out
+    // Verified will be false so the user can be signed out.
     function logout() {
         setUserToken('something')
     }
@@ -58,7 +58,7 @@ const AuthProvider = ({children}) => {
         setUserToken('something')
     }
 
-    // Default stack will navigate between partcipant/admin screen
+    // Default/first screen will navigate between partcipant/admin screen
     // The user will be prompted- to login as admin, or continue as participant/guest
     function admin() {
         // When user token is 'adminstack, takes to admin login
@@ -89,7 +89,7 @@ const AuthProvider = ({children}) => {
         }
 
     // Children will accept from parentices -? Two curl brackets
-    // We can access all those functions in any files in out app by using 
+    // We can access all those functions in any files in our application by importing them
     return (
         <AuthContext.Provider value={{login, logout, addData, handleWeeding,
          userToken, isLoading, admin, participant, goBackToDefaultScreen}}> 
