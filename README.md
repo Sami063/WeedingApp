@@ -2,28 +2,31 @@
 
 Bryllupsapp
 
-Bryllup appen vil inholder en list af kommende brylluper og hvor arrangører opretter dem
-manualt på appen, der vil være en oprettelses form og database tabel.
-Der vil være en side som inholder en list af hvem der skal giftes, hvor og hvornår. Til denne
-opgaver vil jeg gerne brug axios til get/post request og træk data fra back-end med brug
+Bryllups appen vil indeholde en liste af kommende brylluper og hvor arrangører opretter dem
+manualde på app, der vil være en oprettelses form og database tabel.
+Der vil være en side som indeholder en liste af hvem der skal giftes, hvor og hvornår. Til denne
+opgave vil jeg brug Axios til get/post request for at passe data til database og træk data fra back-end med brug
 node js og express.
 
-App inholder:
-Deltager:
+App indeholder: <br>
+Deltager: 
 - Kan tilmeder
-- Mulighed til selv vælge på hvilken bryllup de gerne vil deltage
+- Mulighed for at selv vælge på hvilken bryllup de gerne vil deltage
 - Vælge af madvare og drikevare via burger menu (screen)
 Tilmeding:
-- Deltager kan tilmeder sig og tilføj sine favorite mad via burger menu side/screen
+- Deltager kan tilmelder sig og tilføje sin favorite mad via burger menu side/screen
 Screen: Deltagene:
-- Der vil være en deltagene list, og reservation list med deltagene objekt_id. Jeg vil
-gerne have overblik over hvem har reservede hvad til bryllupet.
+- Der vil være en deltager liste, og reservations list med deltagene. Jeg vil
+gerne have overblik over hvem er reservete hvad til bryllupet.
+<br>
 Screen: Burger menu
+<p>
 - Der vil være en burger menu og de forskelige slags drikevare at valge imellem.
 Bruger kan tilføj de ønsket, og godkende after færdig. Så vil det blev registrere i
 database.
 Google api/vej
 - Der vill implementere google api hvor deltager kan finde vej til.
+</p>
 
 Navn: Samuel Ghebrehiwet
 WBS:
