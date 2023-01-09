@@ -14,7 +14,7 @@ Deltager:
 - Mulighed for at selv vælge på hvilken bryllup de gerne vil deltage
 - Vælge af madvare og drikevare via burger menu (screen)
 Tilmeding:
-- Deltager kan tilmelder sig og tilføje sin favorite mad via burger menu side/screen
+- Deltager kan tilmelder sig og tilføje sin favorite mad via burger menu side/screen <br>
 Screen: Deltagene:
 - Der vil være en deltager liste, og reservations list med deltagene. Jeg vil
 gerne have overblik over hvem er reservete hvad til bryllupet.
