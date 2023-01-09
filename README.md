@@ -37,3 +37,13 @@ Teknologi:
  Mongo db
  Android studio / Expo Go
  Css/bootstrap
+
+<img width="288" alt="image" src="https://user-images.githubusercontent.com/85618108/211297762-21031c3f-df08-489b-bad3-55db8555b449.png">
+<img width="288" alt="image" src="https://user-images.githubusercontent.com/85618108/211297861-b6d91d08-42c0-4af2-81ad-08d2c2c89de2.png">
+
+<img width="192" alt="image" src="https://user-images.githubusercontent.com/85618108/211298500-fc2d4b0d-a20d-400b-9163-7b66a71992f9.png">
+<img width="190" alt="image" src="https://user-images.githubusercontent.com/85618108/211298594-071b0459-6878-4fca-ba00-e6292bf2a553.png">
+<img width="191" alt="image" src="https://user-images.githubusercontent.com/85618108/211298670-75ced039-9db3-40ac-81ea-ac731c87d2e7.png">
+
+
+
