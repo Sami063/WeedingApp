@@ -3,7 +3,7 @@
 Bryllupsapp
 <p>
 Bryllups appen vil indeholde en liste af kommende brylluper og hvor arrangører opretter dem
-manualde på app, der vil være en oprettelses form og database tabel.
+manualde på appen, der vil være en oprettelses form og database tabel.
 Der vil være en side som indeholder en liste af hvem der skal giftes, hvor og hvornår. Til denne
 opgave vil jeg brug Axios til get/post request for at passe data til database og træk data fra back-end med brug
 node js og express.
